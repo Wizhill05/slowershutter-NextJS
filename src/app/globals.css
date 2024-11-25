@@ -24,40 +24,52 @@ body {
 }
 
 .custom-gradient {
-  background: radial-gradient(circle at top center, #000225 0%, #010107 100vh)
+  background: radial-gradient(circle at top center, #676fff 0%, #2504b9 90vh)
     no-repeat;
 }
 
 .gradient-text {
   background-image: radial-gradient(
-    circle at left center,
-    #adadad 0%,
-    #f5f5f5 100%
+    circle at left top,
+    #e7e7e7 0%,
+    #ffffffd7 100%
   );
   color: transparent;
   background-clip: text;
+  -webkit-background-clip: text;
+}
+.custom-card-style {
+  box-shadow: inset 0 0 12px 0 rgb(0 0 0 / 0.6);
+  background: #00000041;
+  z-index: 50;
+  border-radius: 8px;
 }
 
 .font-aventine {
   font-family: var(--font-aventine);
 }
-
 .font-geist-sans {
   font-family: var(--font-geist-sans);
 }
-
 .font-geist-mono {
   font-family: var(--font-geist-mono);
 }
-
 .font-ysabeau {
   font-family: var(--font-ysabeau);
 }
-
 .font-playfair {
   font-family: var(--font-playfair-regular);
 }
-
 .font-playfair-i {
   font-family: var(--font-playfair-italic);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+
+  scrollbar-width: none;
 }
