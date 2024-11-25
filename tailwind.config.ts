@@ -12,6 +12,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        ysabeau: ["var(--font-ysabeau)"],
+        aventine: ["var(--font-aventine)"],
+      },
     },
   },
   plugins: [],

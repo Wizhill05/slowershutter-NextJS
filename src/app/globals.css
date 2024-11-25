@@ -17,5 +17,47 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+.custom-shadow {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.281); /* Change the values for direction and spread */
+}
+
+.custom-gradient {
+  background: radial-gradient(circle at top center, #000225 0%, #010107 100vh)
+    no-repeat;
+}
+
+.gradient-text {
+  background-image: radial-gradient(
+    circle at left center,
+    #adadad 0%,
+    #f5f5f5 100%
+  );
+  color: transparent;
+  background-clip: text;
+}
+
+.font-aventine {
+  font-family: var(--font-aventine);
+}
+
+.font-geist-sans {
+  font-family: var(--font-geist-sans);
+}
+
+.font-geist-mono {
+  font-family: var(--font-geist-mono);
+}
+
+.font-ysabeau {
+  font-family: var(--font-ysabeau);
+}
+
+.font-playfair {
+  font-family: var(--font-playfair-regular);
+}
+
+.font-playfair-i {
+  font-family: var(--font-playfair-italic);
 }
