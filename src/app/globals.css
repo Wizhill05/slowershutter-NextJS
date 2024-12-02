@@ -24,7 +24,7 @@ body {
 }
 
 .custom-gradient {
-  background: radial-gradient(circle at top center, #676fff 0%, #2504b9 90vh)
+  background: radial-gradient(circle at top center, #676fff 0%, #3010c2 90%)
     no-repeat;
 }
 

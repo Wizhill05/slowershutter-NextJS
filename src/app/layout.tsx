@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Navbar from "./components/Navbar";
 import "./globals.css";
+import Sidebar from "./components/Sidebar";
+import SideNavbar from "./components/SideNavbar";
 
 export const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -53,10 +55,20 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${smallcaps.variable} ${aventine.variable} ${playfairRegular.variable} ${playfairItalic.variable}`}
       >
-        <main className="flex flex-col custom-gradient h-screen w-screen bg-blue-600">
-          <Navbar />
-          {children}
-        </main>
+        <div className="flex custom-gradient h-screen w-screen">
+          <div className="block vsm:hidden h-screen">
+            <SideNavbar />
+          </div>
+          <main className="flex flex-col grow">
+            <div className="hidden vsm:block">
+              <Navbar />
+            </div>
+            {children}
+          </main>
+          <div className="hidden 2xl:block w-1/4 h-screen">
+            <Sidebar />
+          </div>
+        </div>
       </body>
     </html>
   );
