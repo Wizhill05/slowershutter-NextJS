@@ -60,7 +60,6 @@ export default {
       },
       fontFamily: {
         ysabeau: ["var(--font-ysabeau)"],
-        aventine: ["var(--font-aventine)"],
         playfairRegular: ["var(--font-playfair-regular)"],
         playfairItalic: ["var(--font-playfair-italic)"],
       },

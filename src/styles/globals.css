@@ -45,9 +45,6 @@ body {
   border-radius: 8px;
 }
 
-.font-aventine {
-  font-family: var(--font-aventine);
-}
 .font-geist-sans {
   font-family: var(--font-geist-sans);
 }

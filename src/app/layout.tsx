@@ -23,11 +23,6 @@ export const smallcaps = localFont({
   weight: "100 900",
 });
 
-export const aventine = localFont({
-  src: "./fonts/Aventine.otf",
-  variable: "--font-aventine",
-});
-
 export const playfairRegular = localFont({
   src: "./fonts/Playfair/Playfair.ttf",
   variable: "--font-playfair-regular",
@@ -53,7 +48,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${smallcaps.variable} ${aventine.variable} ${playfairRegular.variable} ${playfairItalic.variable}`}
+        className={`${geistSans.variable} ${geistMono.variable} ${smallcaps.variable} ${playfairRegular.variable} ${playfairItalic.variable}`}
       >
         <div className="flex custom-gradient h-screen w-screen">
           <div className="block vsm:hidden h-screen">
