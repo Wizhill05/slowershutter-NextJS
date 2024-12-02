@@ -5,31 +5,31 @@ import "../styles/globals.css";
 import Sidebar from "../components/Sidebar";
 import SideNavbar from "../components/SideNavbar";
 
-export const geistSans = localFont({
+const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
 
-export const geistMono = localFont({
+const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
 
-export const smallcaps = localFont({
+const smallcaps = localFont({
   src: "./fonts/YsabeauSCVF.ttf",
   variable: "--font-ysabeau",
   weight: "100 900",
 });
 
-export const playfairRegular = localFont({
+const playfairRegular = localFont({
   src: "./fonts/Playfair/Playfair.ttf",
   variable: "--font-playfair-regular",
   display: "swap",
 });
 
-export const playfairItalic = localFont({
+const playfairItalic = localFont({
   src: "./fonts/Playfair/PlayfairItalic.ttf",
   variable: "--font-playfair-italic",
   display: "swap",
@@ -42,9 +42,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body

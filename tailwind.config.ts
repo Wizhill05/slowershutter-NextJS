@@ -1,4 +1,3 @@
-import { playfairItalic, playfairRegular } from "@/app/layout";
 import type { Config } from "tailwindcss";
 import plugin from "tailwindcss/plugin";
 
