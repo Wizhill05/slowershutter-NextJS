@@ -53,8 +53,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${smallcaps.variable} ${aventine.variable} ${playfairRegular.variable} ${playfairItalic.variable}`}
       >
-        <Navbar />
-        <main>{children}</main>
+        <main className="flex flex-col custom-gradient h-screen w-screen bg-blue-600">
+          <Navbar />
+          {children}
+        </main>
       </body>
     </html>
   );

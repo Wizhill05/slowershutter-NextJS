@@ -1,3 +1,4 @@
+import { playfairItalic, playfairRegular } from "@/app/layout";
 import type { Config } from "tailwindcss";
 import plugin from "tailwindcss/plugin";
 
@@ -60,6 +61,8 @@ export default {
       fontFamily: {
         ysabeau: ["var(--font-ysabeau)"],
         aventine: ["var(--font-aventine)"],
+        playfairRegular: ["var(--font-playfair-regular)"],
+        playfairItalic: ["var(--font-playfair-italic)"],
       },
       textShadow: {
         sm: "0 1px 2px var(--tw-shadow-color)",
